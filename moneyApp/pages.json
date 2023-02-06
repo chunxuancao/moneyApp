@@ -1,0 +1,80 @@
+{
+	"easycom": {
+		"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		}
+        ,{
+            "path" : "pages/Users/Users",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/ShoppingCart/ShoppingCart",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/classify/classify",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#000000",
+		"selectedColor": "#e64a2b",
+		"borderStyle": "#000000",
+		"backgroundColor": "#fff347",
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/首页.png",
+				"selectedIconPath": "static/3.1首页-选中.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/classify/classify",
+				"iconPath": "static/fenlei.png",
+				"selectedIconPath": "static/baozhenfenlei.png",
+				"text": "分类"
+			},
+			{
+				"pagePath": "pages/ShoppingCart/ShoppingCart",
+				"iconPath": "static/3.1购物车.png",
+				"selectedIconPath": "static/3.1购物车-选中.png",
+				"text": "购物车"
+			},
+			{
+				"pagePath": "pages/Users/Users",
+				"iconPath": "static/账号.png",
+				"selectedIconPath": "static/user-fill.png",
+				"text": "个人中心"
+			}
+		]
+		
+	},
+	"uniIdRouter": {}
+}
